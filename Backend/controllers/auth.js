@@ -3,8 +3,6 @@ const jwt = require("jsonwebtoken");
 
 const User = require("../models/User");
 
-const isAuth = require("../middlewares/isAuth");
-
 //Register
 exports.register = async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -61,4 +59,8 @@ exports.login = async (req, res) => {
   } catch (error) {
     console.log(error);
   }
+};
+
+exports.isAuth = async (req, res) => {
+  res.status(200).send({ user: req.user });
 };

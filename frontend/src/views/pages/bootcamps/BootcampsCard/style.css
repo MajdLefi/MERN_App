@@ -1,0 +1,41 @@
+
+.card {
+    width: 180px;
+    height: 100px;
+}
+
+.card:hover{
+    box-shadow:5px 10px 20px 1px rgba(0,0,0,0.253)!important
+}
+
+.card-body {
+    padding: 3rem 0!important
+}
+
+.cardsGroup{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+.card img {
+   height:50px;
+   width: 50px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.card p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color:grey; 
+    
+}
+.card{
+    margin: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    box-shadow: 1px 1px orange; 
+}
+

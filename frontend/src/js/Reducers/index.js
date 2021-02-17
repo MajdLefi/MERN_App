@@ -1,4 +1,10 @@
 import {combineReducers} from 'redux'
 import authReducer from './authReducer'
+import bootcampsReducer from './bootcampsReducer';
 
-export default combineReducers ({authReducer}) ;
+const combineReducer = combineReducers({
+  authReducer,
+  bootcampsReducer
+ })
+
+ export default combineReducer

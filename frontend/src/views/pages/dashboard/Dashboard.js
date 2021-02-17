@@ -1,6 +1,5 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
-import NavBar from '../NavBar/NavBar'
 
 const Dashboard = () => {
     const user = useSelector ((state) => state.authReducer.user)
@@ -9,11 +8,10 @@ const Dashboard = () => {
     }
     return (
         <div>
-            <NavBar/>
             <h1>{user.name} {user.lastName}</h1>
             <h1>{user.email}</h1>
         </div>
     )
 }
 
-export default Dashboard;
+export default Dashboard
