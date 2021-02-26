@@ -1,0 +1,23 @@
+.avatar {
+    vertical-align: middle;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    background: #ac1515;
+  }
+.bntdropdown {
+    position: relative;
+    left: 200px;
+}
+
+.btnbootcamp {
+    position: relative;
+    left: 750px;
+}
+
+   
+.btndashboard {
+    position: relative;
+    right: 0px;
+    width: 100px;
+}

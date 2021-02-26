@@ -1,6 +1,7 @@
 const express = require ("express")
 const app = express()
 const authRouter = require ('./routes/auth')
+const userRouter = require('./routes/user')
 const bootcampRoutes = require('./routes/bootcamp')
 
 const test = require('./test')
@@ -18,7 +19,8 @@ const port = process.env.PORT || 2000
 
 //use the routes
 app.use('/api/auth',authRouter);
-app.use('/',bootcampRoutes)
+app.use('/',bootcampRoutes);
+app.use('/',userRouter);
 
 app.listen(port, (error) =>
     error

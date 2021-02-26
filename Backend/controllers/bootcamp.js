@@ -19,12 +19,9 @@ exports.createBootcamp = async (req, res) => {
 
 //get bootcamp
 exports.getBootcamp = async (req, res) => {
-  try {
-    const findBootcamp = await Bootcamp.find();
-    res.status(200).json(findBootcamp);
-  } catch (error) {
-    console.log(error);
-  }
+ Bootcamp.find()         
+ .then((bootcamps) => res.send(bootcamps))
+ .catch((err) => res.status(400).send({ msg: "ERROR GET USERS"}))
 };
 
 //get one bootcamp

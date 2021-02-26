@@ -15,6 +15,7 @@ import {
 } from "reactstrap";
 
 import { registerUser } from "../../js/actions/authActions";
+import "./LoginModal-style.css";
 
 const RegisterModal = () => {
   const [modal, setModal] = useState(false);

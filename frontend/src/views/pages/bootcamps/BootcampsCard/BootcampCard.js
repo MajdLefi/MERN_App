@@ -1,15 +1,18 @@
-import React from 'react'
-import style from "./style.css"
-const BootcampsCard = () => {
-    return (
-        <div className="cardsGroup">
-            <div className="card">
-                <img alt="mg" />
-                <h2>t</h2>
-                <h4>des</h4>
-            </div>
-        </div>
-    )
-}
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import bootcampsReducer from "../../../../js/Reducers/bootcampsReducer";
+import "./BootcampCard-style.css";
 
-export default BootcampsCard
+const BootcampCard = ({bootcamps}) => {
+  //user = { name , lastName , phone , email }
+  const [show, setShow] = useState(false);
+  const dispatch = useDispatch();
+
+  return (
+    <div >
+     {bootcamps.title}
+    </div>
+  );
+};
+
+export default BootcampCard;

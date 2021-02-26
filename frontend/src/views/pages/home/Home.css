@@ -1,0 +1,48 @@
+.carousel {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img11 .img12 .img13 {
+  height: 200px;
+  width: 150px;
+}
+.educ-1 {
+  width: 500px;
+  height: 500px;
+}
+
+.home-container {
+  background-color: #242424;
+  padding: 0.15rem 0 1rem 0;
+  display: flex;
+  list-style:none;
+  justify-content: space-between;
+
+}
+
+.detail-1 {
+  color:white ;
+  text-align: left;
+  padding-left: 430px;
+}
+
+.detail-2 {
+  color:white ;
+  text-align: center;
+}
+
+.detail-3 {
+  color:white ;
+  text-align: right;
+  padding-right: 430px;
+}
+
+.detail-4 {
+  text-align: center;
+}
+
+.detail-5 {
+  text-align: center;
+}
+

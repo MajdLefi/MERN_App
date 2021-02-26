@@ -8,12 +8,11 @@ import {
 } from '../constants/actionsType'
 
 const initialState = {
-    token : localStorage.getItem('token'),
+    token : localStorage.getItem('x-auth-token'),
     user : null,
     isAuth : false,
     isLoading : false
 };
-
 const authReducer = (state = initialState, {type,payload} ) => {
     switch (type) {
         case USER_LOADING:
@@ -23,7 +22,7 @@ const authReducer = (state = initialState, {type,payload} ) => {
             }
         case REGISTER_USER: 
         case LOGIN_USER:
-        localStorage.setItem('token',payload.token)
+        localStorage.setItem('x-auth-token',payload.token)
         return {
             ...state,
             isLoading : false,
@@ -38,7 +37,7 @@ const authReducer = (state = initialState, {type,payload} ) => {
             ...payload,
         }
         case LOGOUT_USER:
-            localStorage.removeItem('token')
+            localStorage.removeItem('x-auth-token')
             return{
                 ...state,
                 token : null,
